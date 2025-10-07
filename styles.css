@@ -31,7 +31,13 @@ body{
 #top{
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: flex-end;
+    margin-top: 24px;
+}
+
+h1{
+    line-height: 1;
+    margin: 0;
 }
 
 #graphics{
