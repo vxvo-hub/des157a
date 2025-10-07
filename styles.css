@@ -119,10 +119,6 @@ section h2{
     text-align: right;
 }
 
-section:hover{
-    scale: 1.1x;
-}
-
 a{
     text-decoration: none;
     color: inherit;
