@@ -11,6 +11,8 @@ body{
         repeating-linear-gradient(0deg, #F2F2F2 0px, #F2F2F2 1px, transparent 1px, transparent 200px),
         repeating-linear-gradient(90deg, #F2F2F2 0px, #F2F2F2 1px, transparent 1px, transparent 200px);
     background-size: 200px 200px;
+
+    color: rgb(20, 20, 21);
 }
 
 #banner{
@@ -26,6 +28,8 @@ body{
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInUp 2s forwards;
+
+    border: 2px solid rgb(20, 20, 21)
 }
 
 #top{
@@ -48,6 +52,7 @@ h1{
 .graphic{
     filter: grayscale(100%);
     transition: filter 0.5s ease-in, transform 0.5s ease;
+    border: 2px solid rgb(20, 20, 21)
 }
 
 .graphic:hover {
@@ -95,7 +100,14 @@ ul{
 ul li{
     margin-bottom: 12px;
     font-size: 10pt;
-    max-width: 120px;
+    width: 108px;
+    color: gray;
+}
+
+ul li:hover{
+    color: rgb(20, 20, 21);
+    font-weight: 600;
+    cursor: pointer;
 }
 
 .line {
@@ -122,4 +134,10 @@ section h2{
 a{
     text-decoration: none;
     color: inherit;
+}
+
+footer{
+    background-color: rgb(20, 20, 21);
+    color: white;
+    padding: 12px;
 }
