@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2</title>
+
+    <style>
+        #square{
+            width: 100px;
+            height: 100px;
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Experiment 2</h1>
+
+    <div id="square"></div>
+
+    <script>
+        var colors = ["red", "blue", "green", "purple", "orange", "pink", "yellow"];
+
+        function getUserColor() {
+            let userInput = prompt("Choose your favorite color from this list: red, blue, green, purple, orange, pink, yellow")
+            return userInput.toLowerCase();
+        }
+
+        function validColor(color){
+            for (var eachColor of colors){
+                if (color == eachColor){
+                    return color
+                }
+            }
+            return null
+        }
+
+        var squareDiv = document.querySelector('#square')
+
+        function changeBackground(color){
+            if (color){
+                squareDiv.style.backgroundColor = color;
+            } else {
+                squareDiv.style.backgroundColor = 'gray';
+            }
+        }
+
+        var userColor = getUserColor();
+        var verifiedColor = validColor(userColor);
+        changeBackground(verifiedColor);
+    </script>
+
+    
+    
+</body>
+
+</html>
