@@ -19,13 +19,17 @@
     <div id="square"></div>
 
     <script>
+
+        //list of colors
         var colors = ["red", "blue", "green", "purple", "orange", "pink", "yellow"];
 
+        //prompt for color
         function getUserColor() {
             let userInput = prompt("Choose your favorite color from this list: red, blue, green, purple, orange, pink, yellow")
             return userInput.toLowerCase();
         }
 
+        //verify if color is valid
         function validColor(color){
             for (var eachColor of colors){
                 if (color == eachColor){
@@ -35,6 +39,7 @@
             return null
         }
 
+        //query select div to change
         var squareDiv = document.querySelector('#square')
 
         function changeBackground(color){
@@ -45,6 +50,7 @@
             }
         }
 
+        // run functions
         var userColor = getUserColor();
         var verifiedColor = validColor(userColor);
         changeBackground(verifiedColor);
