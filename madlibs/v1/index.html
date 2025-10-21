@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MadLibs V1</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+
+    <script src="script.js" defer></script> 
+
+
+</head>
+<body>
+
+    <div class="background"></div>
+
+    <main>
+    <header>
+        <h1>Create your food review!</h1>
+    </header>
+
+    <form>
+        <label for="Dish name">Dish name: </label><input type="text" id="dish" required>
+        <label for="adjective">Adjective: </label><input type="text" id="adjective" required>
+        <label for="ingredient">Ingredient or Seasoning: </label><input type="text" id="ingredient" required>
+        <label for="Flavor">Flavor: </label><input type="text" id="flavor" required>
+        <label for="bodypart">Body Part: </label><input type="text" id="bodypart" required>
+        <label for="verb">Verb ending in -ing: </label><input type="text" id="verb" required>
+    </form>
+
+    <button>Submit</button>
+
+    <div class ='overlay'>
+
+        <h2>Your rating</h2>
+        <p> I finally got to try this new spot! I ordered the <strong>dish name]</strong>, which was <strong>adjective</strong> and had just the right amount of <strong>ingredient or seasoning</strong>. It was so <strong>flavor</strong> that my <strong>body part</strong> started <strong>verb</strong>.</p>
+
+    </div>
+
+    </main>
+
+
+    
+</body>
+</html>

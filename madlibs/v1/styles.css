@@ -1,0 +1,64 @@
+body{
+    display: flex;
+    height: 100vh;
+}
+
+.background{
+    width: 50vw;
+    background-image: url(images/food.jpg);
+    background-size: cover;    
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    /* gap: 4px; */
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    padding: 40px;
+    gap: 20px;
+    font-family: "Public Sans", sans-serif;
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+input {
+  border: none;              
+  border-bottom: 2px solid rgb(171, 171, 171); 
+  background: transparent; 
+  outline: none;          
+  padding: 8px 0;
+  margin-bottom: 40px;  
+}
+
+input:focus {
+  border-bottom: 2px solid black;
+}
+
+label{
+    text-transform: uppercase;
+    font-size: 10pt;
+}
+
+button{
+    color: white;
+    background-color: black;
+    padding: 8px;
+}
+
+p{
+    line-height: 1.5em;
+}
+
+.overlay{
+    visibility: hidden;
+}
+
