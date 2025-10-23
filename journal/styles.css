@@ -142,4 +142,10 @@ footer{
     padding: 12px;
 }
 
+article{
+    display: flex;
+    flex-direction: column;
+}
+
+
 
