@@ -1,0 +1,158 @@
+body{
+    display: flex;
+    height: 100vh;
+}
+
+.background{
+    width: 50vw;
+    /* flex-grow: 1; */
+    background-image: url(images/food.jpg);
+    background-size: cover;    
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+#maincontent{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    gap: 20px;
+    /* max-width: 600px; */
+    width: 600px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    /* gap: 4px; */
+}
+
+main{
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Public Sans", sans-serif;
+}
+
+
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+input {
+  border: none;              
+  border-bottom: 2px solid rgb(171, 171, 171); 
+  background: transparent; 
+  outline: none;          
+  padding: 8px 0;
+  margin-bottom: 40px;
+}
+
+input:focus {
+  border-bottom: 2px solid black;
+}
+
+label{
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+#submitbutton, button{
+    color: white;
+    background-color: black;
+    padding: 8px 16px;
+    max-width: 200px;
+    border: none;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+#submitbutton:hover, button:hover{
+    color: white;
+    background-color: gray;
+    max-width: 200px;
+}
+
+p{
+    line-height: 1.5em;
+}
+
+.hidden{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing{
+    visibility: visible;
+    opacity: 1;
+}
+
+#finalreview{
+    position: fixed;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition-property: opacity, visibility;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+#finalreview section{
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    width: 50vw;
+    height: 80vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow-y: scroll;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+
+}
+
+#social{
+    display: flex;
+    gap: 32px;
+}
+
+#reviewheader{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#reviewtitle{
+    display: flex;
+    justify-content: space-between;
+}
+
+.green{
+    color: green;
+}
+
+h3{
+    height: 1em;
+    margin: 0;
+    color: gray;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+section h2{
+    height: 1em;
+    margin: 0;
+}
