@@ -1,0 +1,38 @@
+body{
+    font-family: "Caveat";
+}
+#herosquirrel{
+    height: 100vh;
+}
+
+#herosquirrel:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#scroll-container
+{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-y: auto;
+    gap: 30px;
+}
+
+#scroll-container img {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+#scroll-container img.show {
+  opacity: 1;
+  transform: translateY(0);
+}
