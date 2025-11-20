@@ -1,0 +1,109 @@
+body{
+    font-family: "Caveat";
+}
+#herosquirrel{
+    height: 100vh;
+}
+
+
+.front {
+  z-index: 2;
+}
+
+.back {
+  z-index: 1;
+}
+
+.imagecontainer {
+  display: flex;
+  flex-direction: row;
+}
+
+main{
+  margin: 40px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+header{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#herosquirrel:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+header h2{
+    color: gray;
+    height: 1em;
+    margin: 0;
+}
+
+h2{
+  font-size: 32pt;
+}
+
+h1{
+    margin: 0;
+    font-size: 60px;
+}
+
+#top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#scroll-container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-y: auto;
+    gap: 30px;
+}
+
+#scroll-container img {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+#scroll-container img.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#biking{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main div{
+  display: flex;
+  flex-direction: column;
+    height: 100vh;
+}
+
+#nap{
+  flex-direction: row;
+  gap: 80px;
+}
+
+#notes{
+  flex-direction: row;
+  gap: 80px;
+}
+
+#end{
+  flex-direction: row;
+  align-items: center;
+  gap: 80px;
+}
