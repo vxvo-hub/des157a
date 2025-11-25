@@ -17,7 +17,31 @@ body{
 .imagecontainer {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
+
+.imagestack {
+    position: relative;
+    width: fit-content; 
+}
+
+.imagestack img {
+    display: block;
+}
+
+.imagestack .back{
+    position: relative;
+    z-index: 1;
+}
+
+.imagestack .front {
+    position: absolute;
+    top: 270px;  
+    right: 42px; 
+    z-index: 2;
+    transform-origin: bottom left;
+}
+
 
 main{
   margin: 40px;
@@ -100,10 +124,22 @@ main div{
 #notes{
   flex-direction: row;
   gap: 80px;
+  align-items: center;
 }
 
 #end{
   flex-direction: row;
   align-items: center;
   gap: 80px;
+}
+
+.imagecontainer img {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.imagecontainer img.show {
+    opacity: 1;
+    transform: translateY(0);
 }
