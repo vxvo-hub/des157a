@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bunny Blackjack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+
+</head>
+<body>
+    <main>
+        <div id="startscreen">
+                <img src ='images/coverphoto.svg'>
+                <h2>Bunny</h2>
+                <h1>Blackjack</h1>
+                <button>Start game</button>
+        </div>
+
+        <div id="bet">
+                <h2>Place your bet</h2>
+                <div class="horizontal">
+                    <img src ='images/carrot.svg'>
+                    <div>
+                        <h1>0 carrots</h1>
+                        <h3>You have: <b>100</b> carrots left</h3>
+                    </div>
+                </div>
+                
+                <div id="betoptions">
+                    <button>+5</button>
+                    <button>+10</button>
+                    <button>+25</button>
+                    <button>+50</button>
+                    <button>+100</button>
+                </div>
+
+                <div id="actions">
+                    <button class="primary">Place bet</button>
+                    <button>All in</button>
+                    <button class="tertiary">Clear</button>
+                </div>
+        </div>
+
+        <div id="game">
+
+            <div id="carrotcount">
+                <h2>Bet: 20 carrots</h2>
+                <h3>80 left</h3>
+            </div>
+
+            <div class="player">
+                <img src="images/bunny.svg" width="100px">
+                <h1><b>Bunny dealer</b> 13</h1>
+                <div class="horizontal">
+                    <img src="images/6.svg">
+                    <img src="images/7.svg">
+                </div>
+            </div>
+
+            <div class="player">
+                <h1><b>Your cards</b> 13</h1>
+                <div class="horizontal">
+                    <img src="images/6.svg">
+                    <img src="images/7.svg">
+                </div>
+            </div>
+
+            <div id="actions">
+                    <button class="primary">Hit</button>
+                    <button>Stand</button>
+                </div>
+
+        </div>
+    </main>
+</body>
+</html>
