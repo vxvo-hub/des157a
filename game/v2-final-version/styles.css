@@ -110,7 +110,7 @@ button:hover{
     gap: 20px;
 }
 
-#actions{
+.actions{
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -196,5 +196,8 @@ button:hover{
     cursor: pointer;
 }
 
-
+footer{
+    height: 40px;
+    padding: 40px;
+}
 
