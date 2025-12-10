@@ -68,8 +68,8 @@
         buttonSound.play();
     });
 
-    betButtons.forEach(btn => {
-        btn.addEventListener("click", () => {
+    betButtons.forEach(function(btn) {
+        btn.addEventListener("click", function() {
             const add = parseInt(btn.textContent.replace("+", ""), 10);
             if (game.carrots >= add) {
                 game.bet += add;
@@ -124,11 +124,11 @@
         playerHeader.innerHTML = `<b>Your cards</b> ${game.player.total}`;
 
         dealerCardContainer.innerHTML = "";
-        game.dealer.cards.forEach(card => {
+        for (const card of game.dealer.cards) {
             const img = document.createElement("img");
             img.src = cardImage(card);
             dealerCardContainer.appendChild(img);
-        });
+        }
         dealerHeader.innerHTML = `<b>Bunny dealer</b> ${game.dealer.total}`;
 
         carrotCountBox.style.visibility = "visible";
