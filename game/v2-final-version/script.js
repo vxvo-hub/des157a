@@ -183,18 +183,18 @@
             title = "You lose!";
         }
 
-        const modal = document.getElementById("endgame-modal");
-        document.getElementById("endgame-title").innerHTML = title;
-        document.getElementById("endgame-message").innerHTML = message;
+        const modal = document.querySelector("#endgame-modal");
+        document.querySelector("#endgame-title").innerHTML = title;
+        document.querySelector("#endgame-message").innerHTML = message;
 
         modal.style.display = "flex";
 
-        document.getElementById("endgame-ok").onclick = function () {
+        document.querySelector("#endgame-ok").addEventListener("click", function(){
             modal.style.display = "none";
             game.bet = 0;
             updateBetDisplay();
             showScreen(betScreen, startScreen, gameScreen);
-        };
+        });
     }
 
 })();
