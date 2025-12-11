@@ -1,0 +1,148 @@
+body{
+    font-family: "Public Sans", sans-serif;
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    background-color: white; 
+    background-image: 
+        repeating-linear-gradient(0deg, #F2F2F2 0px, #F2F2F2 1px, transparent 1px, transparent 200px),
+        repeating-linear-gradient(90deg, #F2F2F2 0px, #F2F2F2 1px, transparent 1px, transparent 200px);
+    background-size: 200px 200px;
+
+    color: rgb(20, 20, 21);
+    margin-bottom: 100px;
+}
+
+#banner{
+    max-width: 1100px;
+    height: 250px;
+    background-image: url(images/banner.png);
+    background-size: cover;  
+    background-position: center; 
+    background-repeat: no-repeat;
+    border: 1px;
+    margin-top: 40px;
+
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 2s forwards;
+
+    border: 2px solid rgb(20, 20, 21)
+}
+
+#top{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 24px;
+}
+
+h1{
+    line-height: 1;
+    margin: 0;
+}
+
+#graphics{
+    display: flex;
+    gap: 20px;
+}
+
+.graphic{
+    filter: grayscale(100%);
+    transition: filter 0.5s ease-in, transform 0.5s ease;
+    border: 2px solid rgb(20, 20, 21)
+}
+
+.graphic:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+header{
+    margin-top: 40px;
+    text-transform: uppercase;
+    /* display: flex;
+    flex-direction: column;
+    gap: 40px; */
+}
+
+h1{
+    font-size: 12pt;
+    font-weight: 400;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li{
+    margin-bottom: 12px;
+    margin-left: 20px;
+    font-size: 12pt;
+}
+
+
+.line {
+  width: 1px;  
+  /* height: 40px;          */
+  background: black;  
+  margin: 0 16px; 
+  align-self: stretch;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 60px;
+    max-width: 600px;
+}
+
+section p {
+    line-height: 1.5em;
+}
+
+
+section h2{
+    margin: 0;
+    line-height: 1;
+    font-size: 12pt;
+    width: 80px;
+    text-align: right;
+}
+
+a{
+    text-decoration: none;
+    color: purple;
+}
+
+a:hover{
+    color: rgb(187, 89, 187);
+}
+
+footer{
+    background-color: rgb(20, 20, 21);
+    color: white;
+    padding: 12px;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+}
+
+img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

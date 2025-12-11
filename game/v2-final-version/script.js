@@ -8,8 +8,8 @@
 
     const startBtn = document.querySelector("#start");
     const betButtons = document.querySelectorAll("#betoptions button");
-    const placeBetBtn = document.querySelector("#actions .primary");
-    const clearBtn = document.querySelector("#actions .tertiary");
+    const placeBetBtn = document.querySelector("#betbutton");
+    const clearBtn = document.querySelector("#clearbutton");
 
     const carrotCountBox = document.querySelector("#carrotcount");
     const playerCardContainer =
@@ -92,7 +92,7 @@
 
     placeBetBtn.addEventListener("click", function(){
         if (game.bet === 0) return;
-
+        console.log('betbutton');
         startRound();
         showScreen(gameScreen, startScreen, betScreen);
     });
